@@ -6,6 +6,32 @@
  */
 
 the_content();
+function wpb_adding_scripts() {
+  
+ 
+  wp_register_script('jquery.event.move', plugins_url('/js/jquery.event.move.js', __FILE__), array('jquery'),'3.2', true);
+ 
+  wp_enqueue_script('jquery.event.move');
+
+
+    wp_register_script('slider', plugins_url('/js/slider.js', __FILE__), array(), true);
+ 
+  wp_enqueue_script('slider');
+  
+  
+  wp_register_script('jquery.twentytwenty.js', plugins_url('/js/jquery.event.move.js', __FILE__), array('jquery'),'3.2', true);
+ 
+  wp_enqueue_script('jquery.twentytwenty.js');
+  }
+  
+  add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );  
+
+
+function wpb_adding_styles() {
+wp_register_style('twentytwenty', plugins_url('/css/twentytwenty.css', __FILE__));
+wp_enqueue_style('twentytwenty');
+}
+add_action( 'wp_enqueue_scripts', 'wpb_adding_styles' );  
 
 ?>
 
@@ -69,9 +95,3 @@ the_content();
  <!-- The after image is last -->
  <img src="http://placehold.it/400x200&amp;text=2" />
 </div>
-
-<script type="text/javascript">
-$(function(){
-  $("#container1").twentytwenty();
-});
-</script>
