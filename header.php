@@ -24,13 +24,14 @@ $container = get_theme_mod( 'understrap_container_type' );
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  		<script type="text/javascript" src="wp-content/themes/city-link/js/slider.js"></script>
+
 	<script
   src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"
   ></script>
   	<script
   src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"
   ></script>
-		<script type="text/javascript" src="wp-content/themes/city-link/js/slider.js"></script>
 
 	<?php wp_head(); ?>
 </head>
