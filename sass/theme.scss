@@ -9,3 +9,32 @@
 // Any additional imported files //
 @import "theme/theme";  // <--------- That's where you can add your own design. Thats your part!
 @import "theme/contact-form7"; // Contact Form 7 - Bootstrap 4 support
+
+
+@import "theme/free/data/prefixer";
+@import "theme/free/data/mixins";
+@import "theme/free/data/colors";
+@import "theme/free/data/variables";
+@import "theme/free/global";
+@import "theme/free/animations";
+@import "theme/free/helpers";
+@import "theme/free/typography";
+@import "theme/free/buttons";
+@import "theme/free/cards-basic";
+@import "theme/free/dropdowns";
+@import "theme/free/navbar";
+@import "theme/free/pagination";
+@import "theme/free/badge";
+@import "theme/free/breadcrumb";
+@import "theme/free/modals";
+@import "theme/free/progress";
+@import "theme/free/carousel-basic";
+@import "theme/free/collapse";
+@import "theme/free/jumbotron";
+@import "theme/free/masks";
+@import "theme/free/waves";
+@import "theme/free/forms-basic";
+@import "theme/free/msc";
+@import "theme/free/footer";
+@import "theme/free/list-group";
+@import "theme/free/tables";

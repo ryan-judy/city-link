@@ -3,45 +3,88 @@
 
 body {
   background-color: #e7e7e7;
-  padding: 5rem 0;
+  padding: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+      
+      .view {
+            height: 100%;
+        }
 
-// Bootstrap Documentation Example
-.carousel {
-  .carousel-inner {
-    .carousel-item {
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-}
+        /* Navigation*/
 
-// Own Example with background-image on div elements
-.carousel {
-  .carousel-inner {
-    .carousel-item {
-      .carousel-img {
-        width: 100%;
-        height: 300px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: red;
-      }
-      .carousel-img-2 {
-        background-image: url('http://lorempixel.com/800/400/food/');
-      }
-      .carousel-img-3 {
-        background-image: url('http://lorempixel.com/800/400/food/');
-      }
-    }
-  }
-}
+        .navbar {
+            background-color: transparent;
+        }
+        
+
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+
+        .top-nav-collapse {
+            background-color: #1C2331;
+        }
+
+        footer.page-footer {
+            background-color: #1C2331;
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .navbar {
+                background-color: #1C2331;
+            }
+            .display-3 {
+                font-size: 2rem;
+                margin-top: 6rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 667px) {
+            .display-3 {
+                font-size: 3rem;
+            }
+        }
+
+        /* Carousel*/
+        .carousel,
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+
+        .carousel-inner {
+            height: 700px;
+        }
+
+        /*Caption*/
+
+        .flex-center {
+            color: #fff;
+        }
+
+        @media (min-width: 776px) {
+            .carousel .view ul li {
+                display: inline;
+            }
+            .carousel .view .full-bg-img ul li .flex-item {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
 
  .header-overlay {
   position: absolute;
@@ -54,74 +97,30 @@ body {
 
     }
 
-.hero-interior {
-  position: relative;
-  height: 400px;
-     color: white;
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: darkgray;
 
-
+@media (max-width: 62em) {
+  .navbar-nav {
+    padding-top: .425rem;
+    padding-left: 0.75rem;
+  }
+  .navbar-nav .nav-item {
+    float: none;
+  }
+  .navbar-brand {
+    float: right;
+  }
+  .navbar-brand,
+  .navbar-nav .nav-item {
+    display: block;
+  }
+  .navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+  }
+  .dropdown-menu {
+    position: relative;
+    float: none;
+  }
 }
-
-.hero-interior-cta {
-  position: absolute;
-  z-index: 100;
-    line-height: 50px;
-    font-size: 42px;
-    padding-top: 100px;
-    padding-left: 100px;
-    color: white;
-    span {
-      font-weight: bolder;
-      font-style: italic;
-    }
-
-}
-
-.hero-interior-cta-center {
-  position: relative;
-  z-index: 100;
-    line-height: 50px;
-    font-size: 42px;
-    padding-top: 100px;
-    color: white;
-    span {
-      font-weight: bolder;
-      font-style: italic;
-    }
-
-}
-
-.hero-interior-cta-right {
-  position: relative;
-  z-index: 100;
-    line-height: 50px;
-    font-size: 42px;
-    padding-top: 100px;
-    color: white;
-    span {
-      font-weight: bolder;
-      font-style: italic;
-    }
-
-}
-
 
 #beforeafter {
   width: 800px;
@@ -370,3 +369,107 @@ body {
 }
 
 
+/* Carousel and pictures */
+
+.view:not(.hm-zoom) {
+    overflow:visible;
+}
+
+/* Margin from the top */
+
+.container {
+    .row {
+        margin-top: 2.5rem;
+    }
+}
+
+/* Simple blog listing */
+
+.simple-blog-listing {
+    .single-post {
+        margin-bottom: 5rem;
+        &.simple-post-text {
+            margin-bottom: 0;
+            border-bottom: 1px solid #e0e0e0;
+            .post-pictures {
+                img {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        h5 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+        }
+        .post-data {
+            h5 {
+                margin-bottom: 2rem;
+                font-weight: 400;
+                i {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* Archive */
+
+.archive {
+    ul {
+        li {
+            padding-top: 0.8rem;
+            border-top: 1px solid #eceeef;
+            &:first-of-type {
+                border-top: none;
+            }
+            padding-bottom: 0.3rem;
+        }
+    }
+}
+
+/* Author widget */
+
+.simple-author-widget {
+    .author-photo {
+        margin-bottom: 1.8rem;
+    }
+    .about-author {
+        h4 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+/* Simple author page */
+
+.simple-author-page {
+    h1 {
+        margin-bottom: 2rem;
+    }
+    p {
+        text-align: center;
+    }
+    .view {
+        img {
+            margin-top: 2rem;
+        }
+    }
+}
+
+#wrapper-footer {
+  padding: 0px;
+}
+
+
+
+}
