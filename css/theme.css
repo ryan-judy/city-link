@@ -9557,6 +9557,8 @@ body {
   /* Archive */
   /* Author widget */
   /* Simple author page */ }
+  body .wrapper {
+    padding-bottom: 0px; }
   body .view {
     height: 100%; }
   body .navbar {

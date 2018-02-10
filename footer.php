@@ -31,31 +31,30 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-r">
                     <h6 class="title font-bold">
-                        <strong>Company name</strong>
+                        <strong>G&G Properties</strong>
                     </h6>
                     <hr class="blue mb-4 pb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit.</p>
+                    <p>G&G Properties are property investors group with significant experience in residential real estate acquisition, development, and management in the Greater Cleveland area.</p>
                 </div>
                 <!--/.First column-->
 
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r">
                     <h6 class="title font-bold">
-                        <strong>Products</strong>
+                        <strong>Services</strong>
                     </h6>
                     <hr class="blue mb-4 pb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">MDBootstrap</a>
+                        <a href="#!">Home Renovations</a>
                     </p>
                     <p>
-                        <a href="#!">MDWordPress</a>
+                        <a href="#!">New Construction</a>
                     </p>
                     <p>
-                        <a href="#!">BrandFlow</a>
+                        <a href="#!">Property Management</a>
                     </p>
                     <p>
-                        <a href="#!">Bootstrap Angular</a>
+                        <a href="#!">Other</a>
                     </p>
                 </div>
                 <!--/.Second column-->
@@ -63,20 +62,20 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <!--Third column-->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r">
                     <h6 class="title font-bold">
-                        <strong>Useful links</strong>
+                        <strong>Projects</strong>
                     </h6>
                     <hr class="blue mb-4 pb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Your Account</a>
+                        <a href="#!">22026 Calverton</a>
                     </p>
                     <p>
-                        <a href="#!">Become an Affiliate</a>
+                        <a href="#!">Tremont Townhomes</a>
                     </p>
                     <p>
-                        <a href="#!">Shipping Rates</a>
+                        <a href="#!">23599 Shaker Blvd</a>
                     </p>
                     <p>
-                        <a href="#!">Help</a>
+                        <a href="#!">Other</a>
                     </p>
                 </div>
                 <!--/.Third column-->
@@ -88,13 +87,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </h6>
                     <hr class="blue mb-4 pb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <i class="fa fa-home mr-3"></i>123 Main St, Cleveland, OH 44102</p>
                     <p>
-                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                        <i class="fa fa-envelope mr-3"></i>info@example.com</p>
                     <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <i class="fa fa-phone mr-3"></i>216-111-111</p>
                     <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                        <i class="fa fa-phone mr-3"></i>216-222-2222</p>
                 </div>
                 <!--/.Fourth column-->
 
@@ -106,8 +105,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="footer-copyright">
             <div class="container-fluid">
                 © 2017 Copyright:
-                <a href="https://www.MDBootstrap.com">
-                    <strong> MDBootstrap.com</strong>
+                <a href="https://www.gangprops.com">
+                    <strong>G&GProperties.com</strong>
                 </a>
             </div>
         </div>

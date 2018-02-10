@@ -32,15 +32,16 @@ the_content();
                 <div class="full-bg-img flex-center white-text">
                     <ul class="animated fadeInUp col-md-12">
                         <li>
-                            <h1 class="display-3 flex-item font-bold">Material Design for Bootstrap 4</h1>
+                            <h1 class="display-3 flex-item font-bold">G & G Properties</h1>
                             <li>
-                                <h3 class="flex-item">The most powerful and free UI KIT for Bootstrap</h3>
+                                <h3 class="flex-item">Known for quality work, excellent service and impressive results.
+</h3>
                             </li>
                             <li>
-                                <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg flex-item" rel="nofollow">Sign up!</a>
+                                <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg flex-item" rel="nofollow">See Work</a>
 
                                 <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-outline-white btn-lg flex-item"
-                                    rel="nofollow">Learn more</a>
+                                    rel="nofollow">Contact Us</a>
                             </li>
                     </ul>
                 </div>
@@ -56,13 +57,13 @@ the_content();
                 <div class="full-bg-img flex-center white-text">
                     <ul class="animated fadeInUp col-md-12">
                         <li>
-                            <h1 class="display-4 font-bold">Lots of tutorials at your disposal</h1>
+                            <h1 class="display-4 font-bold">Real Estate Investments</h1>
                         </li>
                         <li>
-                            <h3 class="my-4">And all of them are FREE!</h3>
+                            <h3 class="my-4">Specializing in home renovations and new construction development.</h3>
                         </li>
                         <li>
-                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-lg" rel="nofollow">Start learning</a>
+                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-lg" rel="nofollow">Learn more</a>
                         </li>
                     </ul>
                 </div>
@@ -78,13 +79,13 @@ the_content();
                 <div class="full-bg-img flex-center white-text">
                     <ul class="animated fadeInUp col-md-12">
                         <li>
-                            <h1 class="display-4 font-bold">Visit our support forum</h1>
+                            <h1 class="display-4 font-bold">Interested in Working With Us?</h1>
                         </li>
                         <li>
-                            <h3 class="my-4">Our community can help you with any question</h3>
+                            <h3 class="my-4">Contact Us to Get Started</h3>
                         </li>
                         <li>
-                            <a target="_blank" href="https://mdbootstrap.com/forums/forum/support/" class="btn btn-default btn-lg" rel="nofollow">Support forum</a>
+                            <a target="_blank" href="https://mdbootstrap.com/forums/forum/support/" class="btn btn-default btn-lg" rel="nofollow">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +111,7 @@ the_content();
     <!--/.Carousel Wrapper-->
 <div class= "container">
 <div class="divider-new pt-5">
-            <h2 class="h2-responsive indigo-text mx-4 font-bold wow fadeIn">Best features</h2>
+            <h2 class="h2-responsive text-muted mx-4 font-bold wow fadeIn">What We Do</h2>
         </div>
 
         <!--Section: Best features-->
@@ -119,7 +120,7 @@ the_content();
             <div class="row pt-3">
 
                 <!--First columnn-->
-                <div class="col-lg-3 mb-r">
+                <div class="col-lg-4 mb-r">
 
                     <!--Card-->
                     <div class="card hoverable wow fadeIn">
@@ -130,7 +131,7 @@ the_content();
                         <!--Card content-->
                         <div class="card-body">
                             <!--Title-->
-                            <h4 class="card-title text-center">Card title</h4>
+                            <h4 class="card-title text-center">Our Properties</h4>
                             <hr>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -142,7 +143,7 @@ the_content();
                 <!--First columnn-->
 
                 <!--Second columnn-->
-                <div class="col-lg-3 mb-r">
+                <div class="col-lg-4 mb-r">
                     <!--Card-->
                     <div class="card hoverable wow fadeIn" data-wow-delay="0.2s">
 
@@ -164,7 +165,7 @@ the_content();
                 <!--Second columnn-->
 
                 <!--Third columnn-->
-                <div class="col-lg-3 mb-r">
+                <div class="col-lg-4 mb-r">
                     <!--Card-->
                     <div class="card hoverable wow fadeIn" data-wow-delay="0.4s">
 
@@ -174,7 +175,7 @@ the_content();
                         <!--Card content-->
                         <div class="card-body">
                             <!--Title-->
-                            <h4 class="card-title text-center">Card title</h4>
+                            <h4 class="card-title text-center">Contact</h4>
                             <hr>
                             <!--Text-->
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -186,25 +187,7 @@ the_content();
                 <!--Third columnn-->
 
                 <!--First columnn-->
-                <div class="col-lg-3 mb-r">
-                    <!--Card-->
-                    <div class="card hoverable wow fadeIn" data-wow-delay="0.6s">
-
-                        <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/63.jpg" alt="Card image cap">
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title text-center">Card title</h4>
-                            <hr>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-                </div>
+            
                 <!--First columnn-->
             </div>
 
@@ -214,7 +197,8 @@ the_content();
 
 <!--/Section: Best features-->
 
-<div class = "container">
+        <div class="container-fluid pb-0" style="background-color: #1c2331">
+            <div class = "container">
         <div class="divider-new pt-3">
             <h2 class="h2-responsive indigo-text mx-4 font-bold wow fadeIn">Why is it so great?</h2>
         </div>
@@ -258,9 +242,129 @@ the_content();
 
             </div>
             <!--Grid row-->
-
+            </div>
         </section>
         <!--Section: Features v.1-->
+</div>
+
+<div class = "container">
+<!--Section: Testimonials v.2-->
+<section class="text-center pb-5">
+        
+    <!--Section heading-->
+    <h1 class="font-bold h1 py-5">Testimonials</h1>
+    <!--Section description-->
+    
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+    
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+    
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae
+                        quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet
+                        molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor
+                        veniam.</p>
+    
+                    <h4>Anna Deynah</h4>
+                    <h6>Founder at ET Company</h6>
+    
+                    <!--Review-->
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+                </div>
+    
+            </div>
+            <!--First slide-->
+    
+            <!--Second slide-->
+            <div class="carousel-item">
+    
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid" alt="Second sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                        labore. </p>
+    
+                    <h4>Maria Kate</h4>
+                    <h6>Photographer at Studio LA</h6>
+    
+                    <!--Review-->
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                </div>
+    
+            </div>
+            <!--Second slide-->
+    
+            <!--Third slide-->
+            <div class="carousel-item">
+    
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    
+                    <h4>John Doe</h4>
+                    <h6>Front-end Developer in NY</h6>
+    
+                    <!--Review-->
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-o blue-text"> </i>
+                </div>
+    
+            </div>
+            <!--Third slide-->
+    
+        </div>
+        <!--Slides-->
+    
+        <!--Controls-->
+        <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--Controls-->
+    
+    </div>
+    <!--Carousel Wrapper-->
+    
+</section>
+<!--Section: Testimonials v.2-->
 </div>
 
 <div class= "container">
