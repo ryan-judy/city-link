@@ -9869,6 +9869,22 @@ body {
     margin-top: 2rem; }
   body #wrapper-footer {
     padding: 0px; }
+  body input[type=checkbox], body input[type=radio] {
+    display: none; }
+  body .twentytwenty-container {
+    margin: 0 auto; }
+  body .twentytwenty-handle {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  body .twentytwenty-horizontal .twentytwenty-handle:before {
+    margin-bottom: 34px; }
+  body .twentytwenty-horizontal .twentytwenty-handle:after {
+    margin-top: 34px; }
+  body .twentytwenty-handle {
+    height: 56px;
+    width: 40px;
+    margin-top: -34px; }
 
 /*
 * Use existing Bootstrap 4 classes and

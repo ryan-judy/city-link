@@ -474,6 +474,35 @@ body {
   padding: 0px;
 }
 
+input[type=checkbox], input[type=radio] {
+  display: none;
+}
 
+
+  .twentytwenty-container {
+    margin: 0 auto;
+  }
+
+.twentytwenty-handle {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle {
+  &:before {
+    margin-bottom: 34px;
+  }
+  &:after {
+    margin-top: 34px;
+  }
+}
+
+
+.twentytwenty-handle {
+  height: 56px;
+  width: 40px;
+  margin-top: -34px;
+}
 
 }

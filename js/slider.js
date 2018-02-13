@@ -1,6 +1,6 @@
 $(document).ready(function() {
 console.log('loaded')
-  $("#container1").twentytwenty();
+$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
 
 var OFFSET_TOP = 50;
 
