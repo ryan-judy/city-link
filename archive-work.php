@@ -26,6 +26,22 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			<main class="site-main" id="main">
 
+        <div class="view-two hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/images/76.jpg);">
+            <div class="full-bg-img">
+                <div class="container flex-center">
+                    <div class="row pt-5 mt-3">
+                        <div class="col-md-12 mb-3">
+                            <div class="intro-info-content text-center">
+                                <h4 class="display-2 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">OUR
+                                    <a class="white-text font-bold">PROJECTS</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 				<?php if ( have_posts() ) : ?>
 <div class = "container">
 				
@@ -98,18 +114,19 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php get_footer(); ?>
 <script src='https://unpkg.com/shufflejs@5'></script>
 <script>
-  var Shuffle = window.Shuffle;
- 
+var Shuffle = window.Shuffle;
+
 var myShuffle = new Shuffle(document.querySelector('.my-shuffle'), {
   itemSelector: '.image-item',
   sizer: '.my-sizer-element',
   buffer: 1,
 });
- 
+
 window.jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
   var input = evt.currentTarget;
   if (input.checked) {
     myShuffle.filter(input.value);
   }
 });
+
 </script>

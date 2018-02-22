@@ -19,7 +19,7 @@
                     <div class="col-md-12">
                         <!--Featured image-->
                         <div class="card card-cascade wider reverse">
-                            <div class="view overlay hm-white-slight">
+                            <div class="view-3 overlay hm-white-slight">
                                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(134).jpg" alt="Wide sample post image">
                                 <a>
                                     <div class=""></div>
