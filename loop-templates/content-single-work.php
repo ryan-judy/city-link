@@ -19,8 +19,8 @@
                     <div class="col-md-12">
                         <!--Featured image-->
                         <div class="card card-cascade wider reverse">
-                            <div class="view-3 overlay hm-white-slight">
-                                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(134).jpg" alt="Wide sample post image">
+                            <div class="view-3 overlay hm-white-slight text-center">
+                                <img src="<?php the_field('featured_image'); ?>" alt="Wide sample post image">
                                 <a>
                                     <div class=""></div>
                                 </a>
@@ -29,7 +29,7 @@
                             <!--Post data-->
                             <div class="card-body text-center">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                                <p class = "text-muted">Subheading</p>
+                                <p class = "text-muted"><?php the_field('property_subhead'); ?></p>
 
                                 <!--Social shares-->
 
@@ -42,7 +42,7 @@
                         <!--Excerpt-->
                         <div class="excerpt mt-5 wow fadeIn" data-wow-delay="0.3s" style="animation-name: none; visibility: visible;">
                             
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                            <p><?php the_field('property_description'); ?></p>
                             
                         </div>
                     </div>
@@ -72,13 +72,14 @@
 			$image = get_sub_field('before');
 
 		$image2 = get_sub_field('after');
-				$label = get_sub_field('label');
+		$label = get_sub_field('label');
+        $description = get_sub_field('description');
 
 
 		?>
 		 <div class="col-lg-6 col-md-12">
 
-          <div class="card">
+          <div class="card mb-5">
 
 		  	<div class="twentytwenty-container">
 
@@ -93,7 +94,7 @@
                                 <h4 class="card-title"><?php echo $label ?></h4>
                                 <hr>
                                 <!--Text-->
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text"><?php echo $description ?></p>
                                 <a href="#" class="black-text d-flex flex-row-reverse">
                                 </a>
                             </div>

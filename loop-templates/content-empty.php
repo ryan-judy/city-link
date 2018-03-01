@@ -12,7 +12,7 @@ the_content();
 
 
 
-        <div class="view hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/images/76.jpg);">
+        <div class="jarallax hm-white-light view" data-jarallax='{"speed": 0.2}' style="background-image: url(<?php the_field('hero_image'); ?>);">
             <div class="full-bg-img">
                 <div class="container flex-center">
                     <div class="row pt-5 mt-3">
@@ -21,7 +21,7 @@ the_content();
                                 <h1 class="display-1 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">G&G
                                     <a class="white-text font-bold">Properties</a>
                                 </h1>
-                                <h5 class="font-up mb-5 mt-1 dark-grey-text spacing font-bold wow fadeInDown" data-wow-delay="0.3s">Real Estate Investments</h5>
+                                <h5 class="font-up mb-5 mt-1 text-light spacing font-bold wow fadeInDown" data-wow-delay="0.3s">Real Estate Investments</h5>
                                 <a class="btn btn-elegant btn-lg wow fadeInDown" data-wow-delay="0.3s">WORK</a>
                                 <a class="btn btn-primary btn-lg wow fadeInDown" data-wow-delay="0.3s">CONTACT</a>
                             </div>
@@ -39,7 +39,18 @@ the_content();
         <section id="best-features">
 
             <div class="row pt-3">
+<?php if( have_rows('module_1_imgae') ): ?>
 
+
+    <?php while( have_rows('module_1_imgae') ): the_row(); 
+
+        // vars
+            $image = get_sub_field('before');
+
+        $image2 = get_sub_field('after');
+
+
+        ?>
                 <!--First columnn-->
                 <div class="col-lg-6 mb-r">
 
@@ -47,18 +58,29 @@ the_content();
                     <div class="card hoverable wow fadeIn">
 
                         <!--Card image-->
-                        <img class="img-fluid resize" src="http://lorempixel.com/400/200/sports/Dummy-Text/" alt="Card image cap">
+                        <div class="twentytwenty-container">
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+
+                <img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt'] ?>" />
+
+            </div>
+
 
                         <!--Card content-->
                         <div class="card-body text-center">
                             <!--Title-->
-                            <h4 class="card-title text-center">Our Work</h4>
+                            <h4 class="card-title text-center"><?php the_field('module_1_heading'); ?></h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text">See before and after comparison examples of our past work and projects.</p>
-                            <button type="button" class="btn btn-elegant">Primary</button>
+                            <p class="card-text grey"><?php the_field('module_1_content'); ?></p>
+                            <button type="button" class="btn btn-elegant"><?php the_field('module_1_button_cta'); ?></button>
 
                         </div>
+            <?php endwhile; ?>
+
+
+<?php endif; ?>
 
                     </div>
                     <!--/.Card-->
@@ -71,16 +93,16 @@ the_content();
                     <div class="card hoverable wow fadeIn" data-wow-delay="0.2s">
 
                         <!--Card image-->
-                        <img class="img-fluid resize" src="http://lorempixel.com/400/200/sports/Dummy-Text/" alt="Card image cap">
+                        <img class="img-fluid resize" src="<?php the_field('module_2_image'); ?>" alt="Card image cap">
 
                         <!--Card content-->
                         <div class="card-body text-center">
                             <!--Title-->
-                            <h4 class="card-title text-center">Services</h4>
+                            <h4 class="card-title text-center"><?php the_field('module_2_heading'); ?></h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text">Looking for a real estate investor in Cleveland? See our areas of expertise.</p>
-                            <button type="button" class="btn btn-elegant">Primary</button>
+                            <p class="card-text"><?php the_field('module_2_content'); ?></p>
+                            <button type="button" class="btn btn-elegant"><?php the_field('module_2_button_cta'); ?></button>
 
                         </div>
 
@@ -107,14 +129,14 @@ the_content();
         <div class="container-fluid py-5" style="background-color: #1c2331">
             <div class = "container">
         <div class="divider-new pt-3">
-            <h2 class="h2-responsive text-light mx-4 font-bold wow fadeIn">Why Work With Us?</h2>
+            <h2 class="h2-responsive text-light mx-4 font-bold wow fadeIn"><?php the_field('component_heading'); ?></h2>
         </div>
 
         <!--Section: Features v.1-->
         <section class="section feature-box text-center">
 
             <!--Section description-->
-            <p class="section-description lead text-light mb-5 mx-lg-5">We have years of experience managing and effectively coordinating real estate property investments, from home renovations to new construction developments.</p>
+            <p class="section-description lead text-light mb-5 mx-lg-5"><?php the_field('component_subhead'); ?></p>
 
             <!--Grid row-->
             <div class="row text-center">
@@ -122,24 +144,24 @@ the_content();
                 <!--Grid column-->
                 <div class="col-md-4 mb-r">
                     <i class="fa fa-3x fa-calendar blue-text"></i>
-                    <h5 class="font-bold text-light mt-3">Professionalism</h5>
-                    <p class="grey-text">We'll keep you up-to-date and manage timelines effectively.</p>
+                    <h5 class="font-bold text-light mt-3"><?php the_field('section_1_heading'); ?></h5>
+                    <p class="grey-text"><?php the_field('section_1_content'); ?></p>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
                 <div class="col-md-4 mb-r">
                     <i class="fa fa-3x fa-briefcase blue-text"></i>
-                    <h5 class="font-bold text-light mt-3">Quality Service</h5>
-                    <p class="grey-text">We provide a standard of service. </p>
+                    <h5 class="font-bold text-light mt-3"><?php the_field('section_2_heading'); ?></h5>
+                    <p class="grey-text"><?php the_field('section_2_content'); ?></p>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
                 <div class="col-md-4 mb-r">
                     <i class="fa fa-3x fa-industry blue-text"></i>
-                    <h5 class="font-bold text-light mt-3">Results</h5>
-                    <p class="grey-text">The most important part of your investment is getting results.</p>
+                    <h5 class="font-bold text-light mt-3"><?php the_field('section_3_heading'); ?></h5>
+                    <p class="grey-text"><?php the_field('section_3_content'); ?></p>
                 </div>
                 <!--Grid column-->
 
@@ -181,12 +203,7 @@ the_content();
                     <h4>Anna Deynah</h4>
                     <h6>Founder at ET Company</h6>
     
-                    <!--Review-->
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star-half-full blue-text"> </i>
+
                 </div>
     
             </div>
@@ -210,12 +227,7 @@ the_content();
                     <h4>Maria Kate</h4>
                     <h6>Photographer at Studio LA</h6>
     
-                    <!--Review-->
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
+
                 </div>
     
             </div>
@@ -238,12 +250,6 @@ the_content();
                     <h4>John Doe</h4>
                     <h6>Front-end Developer in NY</h6>
     
-                    <!--Review-->
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star blue-text"> </i>
-                    <i class="fa fa-star-o blue-text"> </i>
                 </div>
     
             </div>
@@ -253,12 +259,13 @@ the_content();
         <!--Slides-->
     
         <!--Controls-->
-        <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
+        <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+            <i class="fa fa-arrow-circle-left fa-3x text-dark"></i>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
+
+        <a class="carousel-control-next text-faded" href="#carousel-example-1" role="button" data-slide="next">
+            <i class="fa fa-arrow-circle-right fa-3x text-dark"></i>
             <span class="sr-only">Next</span>
         </a>
         <!--Controls-->
@@ -269,5 +276,10 @@ the_content();
 </section>
 <!--Section: Testimonials v.2-->
 </div>
+
+<div class = "container">
+    <div class = "row">
+    </div>
+    </div>
 
 

@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
 
 
 		<?php if ( 'container' == $container ) : ?>

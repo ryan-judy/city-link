@@ -630,4 +630,16 @@ input[type=checkbox], input[type=radio] {
   height: 300px;
 }
 
+.bg-dark {
+  background-color: #1c2331!important;
+}
+
+.jarallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 }

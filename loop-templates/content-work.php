@@ -37,7 +37,7 @@ if ( $terms && ! is_wp_error( $terms ) ) :
           <div class="aspect aspect--16x9">
 
         <div class="aspect__inner">
-          <img src="http://lorempixel.com/400/200/sports/"></div>
+          <img src="<?php the_field('featured_image'); ?>"></div>
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">

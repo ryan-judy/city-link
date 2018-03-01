@@ -47,4 +47,3 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
-Add Comment C

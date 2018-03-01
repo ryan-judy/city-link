@@ -9968,6 +9968,14 @@ body {
     font-size: 62px; }
   body .resize {
     height: 300px; }
+  body .bg-dark {
+    background-color: #1c2331 !important; }
+  body .jarallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /*
 * Use existing Bootstrap 4 classes and
