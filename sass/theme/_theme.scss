@@ -634,6 +634,10 @@ input[type=checkbox], input[type=radio] {
   background-color: #1c2331!important;
 }
 
+.text-dark {
+  color: #1c2331!important;
+}
+
 .jarallax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -641,5 +645,24 @@ input[type=checkbox], input[type=radio] {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.services-image {
+  min-height: 360px;
+  width: 100%;
+}
+
+.card-testimonial {
+  min-height: 540px;
+}
+
+
+.img-fluid-test {
+  height: 200px;
+}
+
+.team-image {
+  height: 450px;
+}
+
 
 }

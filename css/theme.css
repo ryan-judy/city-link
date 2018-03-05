@@ -9970,12 +9970,23 @@ body {
     height: 300px; }
   body .bg-dark {
     background-color: #1c2331 !important; }
+  body .text-dark {
+    color: #1c2331 !important; }
   body .jarallax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+  body .services-image {
+    min-height: 360px;
+    width: 100%; }
+  body .card-testimonial {
+    min-height: 540px; }
+  body .img-fluid-test {
+    height: 200px; }
+  body .team-image {
+    height: 450px; }
 
 /*
 * Use existing Bootstrap 4 classes and

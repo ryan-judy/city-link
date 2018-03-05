@@ -14,8 +14,7 @@
                     <div class="row pt-5 mt-3">
                         <div class="col-md-12 mb-3">
                             <div class="intro-info-content text-center">
-                                <h4 class="display-2 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s">ABOUT
-                                    <a class="white-text font-bold">US</a>
+                                <h4 class="display-2 white-text mb-5 wow fadeInDown" data-wow-delay="0.3s"><?php the_field('hero_header') ?>
                                 </h4>
                             </div>
                         </div>
@@ -30,7 +29,7 @@
                 <div class="col-lg-7">
                     <!--Featured image -->
                     <div class="overlay hm-white-light z-depth-1-half">
-                        <img src="http://lorempixel.com/800/400/sports/Dummy-Text/" class="img-fluid " alt="">
+                        <img src="<?php the_field('component_1_image')?>" class="img-fluid " alt="">
                         <div class="mask">
                         </div>
                     </div>
@@ -40,15 +39,12 @@
   <!--Main information-->
 
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.2s">
-                    <h2 class="h2-responsive font-bold dark-grey-text">Property Investors</h2>
+                    <h2 class="h2-responsive font-bold dark-grey-text"><?php the_field('component_1_header') ?></h2>
                     <hr>
-                    <p class="dark-grey-text mt-3">G&G Properties are property investors group with significant experience in residential real estate acquisition, development, and management in the Greater Cleveland area.</p>
-                    
-
-                    <p class="dark-grey-text mt-3">G&G maintains a disciplined and opportunistic investment approach based on building strong relationships, searching across a wide range of opportunities, understanding and mitigating hidden risks, effectively and efficiently executing project management, and focusing on return on investment.</p>
+                    <p class="dark-grey-text mt-3"><?php the_field('component_1_content', false, false) ?>
 
 </p>
-                    <a href="" class="btn btn-elegant btn-md">Contact Us</a>
+                    <a href="" class="btn btn-elegant btn-md"><?php the_field('component_1_button_CTA') ?></a>
                 </div>
             </div>
             <!--/.First row-->
@@ -56,7 +52,7 @@
             <hr class="extra-margins my-5">
 <h3 class="text-center title my-5 pt-4 dark-grey-text font-bold wow fadeIn" data-wow-delay="0.2s">
     <div class="divider-new">
-                        <strong>The Partners</strong>
+                        <strong class = "mx-4 text-dark">The Partners</strong>
                     </div>
                     </h3>
             <!--Second row-->
@@ -71,17 +67,17 @@
                     <div class="card mb-r wow fadeIn" data-wow-delay="0.6s">
 
                         <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/64.jpg" alt="Card image cap">
+                        <img class="img-fluid team-image" src="<?php the_field('partner_1_image') ?>" alt="Card image cap">
 
                         <!--Card content-->
                         <div class="card-body">
                             <!--Title-->
                             <h4 class="card-title text-center dark-grey-text">
-                                <strong>George Sidoris Sr.</strong>
+                                <strong><?php the_field('partner_1_Headline') ?></strong>
                             </h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text text-center">Principal</p>
+                            <p class="card-text text-center"><?php the_field('partner_1_description', false, false) ?></p>
                         </div>
 
                     </div>
@@ -95,17 +91,17 @@
                     <div class="card mb-r wow fadeIn" data-wow-delay="0.8s">
 
                         <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/72.jpg" alt="Card image cap">
+                        <img class="img-fluid team-image" src="<?php the_field('partner_2_image') ?>" alt="Card image cap">
 
                         <!--Card content-->
                         <div class="card-body">
                             <!--Title-->
                             <h4 class="card-title text-center dark-grey-text">
-                                <strong>George Sidoris Jr.</strong>
+                                <strong><?php the_field('partner_2_headline') ?></strong>
                             </h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text text-center">Principal</p>
+                            <p class="card-text text-center"><?php the_field('partner_2_description', false, false) ?></p>
                         </div>
 
                     </div>
@@ -126,7 +122,7 @@
                     <!-- Section heading -->
                     <h3 class="text-center title my-5 pt-4 text-light font-bold wow fadeIn" data-wow-delay="0.2s">
                         <div class="divider-new">
-                        <strong>Our Services</strong>
+                        <strong class = "mx-4">Our Services</strong>
                     </div>
                     </h3>
 
@@ -140,10 +136,9 @@
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
                                     <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
-                                    <strong>Home Renovations</strong>
+                                    <strong><?php the_field('module_1_heading') ?></strong>
                                 </p>
-                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
-                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                <p class="grey-text font-small mx-4"><?php the_field('module_1_content', false, false) ?>
                                     <p class="font-small font-bold blue-text mx-4 mb-0">
                                         <a>See Examples</a>
                                     </p>
@@ -161,10 +156,9 @@
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
                                     <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
-                                    <strong>New Construction</strong>
+                                    <strong><?php the_field('module_2_heding') ?></strong>
                                 </p>
-                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
-                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                <p class="grey-text font-small mx-4"><?php the_field('module_2_content', false, false) ?>
                                     <p class="font-small font-bold indigo-text mx-4 mb-0">
                                         <a>See Examples</a>
                                     </p>
@@ -182,10 +176,9 @@
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
                                     <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
-                                    <strong>Property Management</strong>
+                                    <strong><?php the_field('module_3_heading') ?></strong>
                                 </p>
-                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
-                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                <p class="grey-text font-small mx-4"><?php the_field('module_3_content', false, false) ?>
                                     <p class="font-small font-bold indigo-text mx-4 mb-0">
                                         <a>See Examples</a>
                                     </p>
@@ -203,10 +196,9 @@
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
                                     <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
-                                    <strong>Other</strong>
+                                    <strong><?php the_field('module_4_heading') ?></strong>
                                 </p>
-                                <p class="grey-text font-small mx-4">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente earu
-                                    proident. Ad vegan excepteur butcher vice lomo leggings.
+                                <p class="grey-text font-small mx-4"><?php the_field('module_4_content', false, false) ?>
                                     <p class="font-small font-bold indigo-text mx-4 mb-0">
                                         <a>read more</a>
                                     </p>
