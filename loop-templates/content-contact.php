@@ -48,17 +48,17 @@ the_content();
                 <div class="col-md-4 mt-5">
                     <ul class="text-center list-unstyled">
                         <li class="wow fadeIn" data-wow-delay="0.2s">
-                            <i class="fa fa-map-marker indigo-text fa-2x"></i>
+                            <i class="fa fa-map-marker blue-text fa-2x"></i>
                             <p><?php the_field('address') ?></p>
                         </li>
 
                         <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.3s">
-                            <i class="fa fa-phone indigo-text fa-2x"></i>
+                            <i class="fa fa-phone blue-text fa-2x"></i>
                             <p><?php the_field('phone') ?></p>
                         </li>
 
                         <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.4s">
-                            <i class="fa fa-envelope indigo-text fa-2x"></i>
+                            <i class="fa fa-envelope blue-text fa-2x"></i>
                             <p><?php the_field('email') ?></p>
                         </li>
                     </ul>

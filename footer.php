@@ -45,16 +45,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </h6>
                     <hr class="blue mb-4 pb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Home Renovations</a>
+                        <a href="/services/home-renovations">Home Renovations</a>
                     </p>
                     <p>
-                        <a href="#!">New Construction</a>
+                        <a href="/services/new-construction">New Construction</a>
                     </p>
                     <p>
-                        <a href="#!">Property Management</a>
+                        <a href="/services/property/management">Property Management</a>
                     </p>
                     <p>
-                        <a href="#!">Other</a>
+                        <a href="/services/other">Other</a>
                     </p>
                 </div>
                 <!--/.Second column-->

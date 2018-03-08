@@ -11,7 +11,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
-
+<div class = "container my-5">
 <div class="wrapper" id="error-404-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
@@ -84,5 +84,5 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	</div><!-- Container end -->
 
 </div><!-- Wrapper end -->
-
+</div>
 <?php get_footer(); ?>

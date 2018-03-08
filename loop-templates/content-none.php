@@ -8,7 +8,7 @@
  */
 
 ?>
-
+<div class = "container my-5">
 <section class="no-results not-found">
 
 	<header class="page-header">
@@ -42,3 +42,4 @@
 	</div><!-- .page-content -->
 	
 </section><!-- .no-results -->
+</div>

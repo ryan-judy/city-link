@@ -9603,7 +9603,8 @@ body {
   @media (max-width: 62em) {
     body .navbar-nav {
       padding-top: .425rem;
-      padding-left: 0.75rem; }
+      padding-left: 0.75rem;
+      text-align: center; }
     body .navbar-nav .nav-item {
       float: none; }
     body .navbar-brand {
@@ -9928,7 +9929,7 @@ body {
       text-align: center;
       opacity: 0;
       color: white;
-      background: rgba(0, 0, 0, 0.9);
+      background: rgba(28, 35, 49, 0.9);
       transition: all ease .5s;
       -webkit-transition: all ease .5s; }
       body .portfolio-box .portfolio-box-caption .project-icon {
@@ -9987,6 +9988,14 @@ body {
     height: 200px; }
   body .team-image {
     height: 450px; }
+  body .display-1 {
+    font-size: 72px; }
+  body .display-2 {
+    font-size: 50px; }
+  body .btn-group {
+    display: inline-table; }
+  body #cf7md-form .mdc-textfield--focused.mdc-textfield--upgraded:not(.mdc-textfield--fullwidth):not(.mdc-textfield--multiline)::after, body #cf7md-form .mdc-multi-select:focus .mdc-list-item:checked, body #cf7md-form .mdc-checkbox__background::before, body #cf7md-form .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background, body #cf7md-form .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background, body #cf7md-form .mdc-radio__background::before, body #cf7md-form .mdc-radio__native-control:checked + .mdc-radio__background .mdc-radio__inner-circle, body #cf7md-form .mdc-button--primary.mdc-button--raised, body #cf7md-form .mdc-switch__native-control:checked ~ .mdc-switch__background::before, body #cf7md-form .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob, body #cf7md-form .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob::before {
+    background-color: #2196f3 !important; }
 
 /*
 * Use existing Bootstrap 4 classes and

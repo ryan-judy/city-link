@@ -86,6 +86,7 @@ body {
   .navbar-nav {
     padding-top: .425rem;
     padding-left: 0.75rem;
+    text-align: center;
   }
   .navbar-nav .nav-item {
     float: none;
@@ -560,7 +561,7 @@ input[type=checkbox], input[type=radio] {
     text-align: center;
     opacity: 0;
     color: white;
-    background: fade-out(black, .1);
+    background: fade-out(#1c2331, .1);
     transition: all ease .5s;
     -webkit-transition: all ease .5s;
           .project-icon {
@@ -662,6 +663,22 @@ input[type=checkbox], input[type=radio] {
 
 .team-image {
   height: 450px;
+}
+
+.display-1 {
+  font-size: 72px;
+}
+
+.display-2 {
+  font-size: 50px;
+}
+
+.btn-group {
+  display: inline-table;
+}
+
+#cf7md-form .mdc-textfield--focused.mdc-textfield--upgraded:not(.mdc-textfield--fullwidth):not(.mdc-textfield--multiline)::after, #cf7md-form .mdc-multi-select:focus .mdc-list-item:checked, #cf7md-form .mdc-checkbox__background::before, #cf7md-form .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background, #cf7md-form .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background, #cf7md-form .mdc-radio__background::before, #cf7md-form .mdc-radio__native-control:checked + .mdc-radio__background .mdc-radio__inner-circle, #cf7md-form .mdc-button--primary.mdc-button--raised, #cf7md-form .mdc-switch__native-control:checked ~ .mdc-switch__background::before, #cf7md-form .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob, #cf7md-form .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob::before {
+  background-color: #2196f3!important;
 }
 
 

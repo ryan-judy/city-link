@@ -8,7 +8,7 @@
 ?>
 
 <!-- Intro Section -->
-        <div class="view-two hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/images/76.jpg);">
+        <div class="view-two hm-white-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(<?php the_field('hero_image'); ?>); background-position:bottom; ">
             <div class="full-bg-img">
                 <div class="container flex-center">
                     <div class="row pt-5 mt-3">
@@ -23,33 +23,26 @@
             </div>
         </div>
 
-        <div class="container pb-0">
+        <div class="container pb-0 text-center">
             <!--First row-->
-            <div class="row mt-5 pt-lg-4 wow fadeIn" data-wow-delay="0.2s">
-                <div class="col-lg-7">
-                    <!--Featured image -->
-                    <div class="overlay hm-white-light z-depth-1-half">
-                        <img src="<?php the_field('component_1_image')?>" class="img-fluid " alt="">
-                        <div class="mask">
-                        </div>
-                    </div>
-                    <br>
-                </div>
+            <div class="row wow fadeIn" data-wow-delay="0.2s" style="margin-top: 0px;">
 
   <!--Main information-->
 
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.2s">
-                    <h2 class="h2-responsive font-bold dark-grey-text"><?php the_field('component_1_header') ?></h2>
-                    <hr>
-                    <p class="dark-grey-text mt-3"><?php the_field('component_1_content', false, false) ?>
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.2s">
+                    <h3 class="text-center title my-5 pt-4 dark-grey-text font-bold wow fadeIn" data-wow-delay="0.2s">
+    <div class="divider-new">
+                        <strong class = "mx-4 text-dark"><?php the_field('component_1_header') ?></strong>
+                    </div>
+                    </h3>
+                    <p class="text-dark mt-3"><?php the_field('component_1_content', false, false) ?>
 
 </p>
-                    <a href="" class="btn btn-elegant btn-md"><?php the_field('component_1_button_CTA') ?></a>
+                    <a href="/contact" class="btn btn-elegant btn-md"><?php the_field('component_1_button_CTA') ?></a>
                 </div>
             </div>
             <!--/.First row-->
 
-            <hr class="extra-margins my-5">
 <h3 class="text-center title my-5 pt-4 dark-grey-text font-bold wow fadeIn" data-wow-delay="0.2s">
     <div class="divider-new">
                         <strong class = "mx-4 text-dark">The Partners</strong>
@@ -135,12 +128,12 @@
                             <!--Panel-->
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
-                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <i class="fa fa-square blue-text mr-2" aria-hidden="true"></i>
                                     <strong><?php the_field('module_1_heading') ?></strong>
                                 </p>
                                 <p class="grey-text font-small mx-4"><?php the_field('module_1_content', false, false) ?>
                                     <p class="font-small font-bold blue-text mx-4 mb-0">
-                                        <a>See Examples</a>
+                                        <a href="/services/home-renovations">See Examples</a>
                                     </p>
                                 </p>
                             </div>
@@ -155,12 +148,12 @@
                             <!--Panel-->
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
-                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <i class="fa fa-square blue-text mr-2" aria-hidden="true"></i>
                                     <strong><?php the_field('module_2_heding') ?></strong>
                                 </p>
                                 <p class="grey-text font-small mx-4"><?php the_field('module_2_content', false, false) ?>
-                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
-                                        <a>See Examples</a>
+                                    <p class="font-small font-bold blue-text mx-4 mb-0">
+                                        <a href="/services/new-construction">See Examples</a>
                                     </p>
                                 </p>
                             </div>
@@ -175,12 +168,12 @@
                             <!--Panel-->
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
-                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <i class="fa fa-square blue-text mr-2" aria-hidden="true"></i>
                                     <strong><?php the_field('module_3_heading') ?></strong>
                                 </p>
                                 <p class="grey-text font-small mx-4"><?php the_field('module_3_content', false, false) ?>
-                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
-                                        <a>See Examples</a>
+                                    <p class="font-small font-bold blue-text mx-4 mb-0">
+                                        <a href="/services/property-management">See Examples</a>
                                     </p>
                                 </p>
                             </div>
@@ -195,12 +188,12 @@
                             <!--Panel-->
                             <div class="card card-body text-left white hoverable">
                                 <p class="feature-title title font-bold dark-grey-text font-up spacing mt-4 mx-4">
-                                    <i class="fa fa-square indigo-text mr-2" aria-hidden="true"></i>
+                                    <i class="fa fa-square blue-text mr-2" aria-hidden="true"></i>
                                     <strong><?php the_field('module_4_heading') ?></strong>
                                 </p>
                                 <p class="grey-text font-small mx-4"><?php the_field('module_4_content', false, false) ?>
-                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
-                                        <a>read more</a>
+                                    <p class="font-small font-bold blue-text mx-4 mb-0">
+                                        <a href="/services/other">See Examples</a>
                                     </p>
                                 </p>
                             </div>

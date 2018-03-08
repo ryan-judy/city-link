@@ -46,25 +46,18 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				
 <div class="row mb-3">
     <div class="col">
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-outline-primary active">
-          <input type="radio" name="shuffle-filter" value="all" checked="checked"/>All
-        </label>
-        <label class="btn btn-outline-primary">
-          <input type="radio" name="shuffle-filter" value='Home Renovations'/>Home Renovations
-        </label>
-        <label class="btn btn-outline-primary">
-          <input type="radio" name="shuffle-filter" value="New Construction"/>New Construction
-        </label>
-        <label class="btn btn-outline-primary">
-          <input type="radio" name="shuffle-filter" value="Other"/>Other
-        </label>
+ <div class="btn-group">
+        <a href="/work" class="btn btn-outline-primary" role="button" aria-pressed="true">All</a>
+        <a href="/services/home-renovations" class="btn btn-outline-primary" role="button" aria-pressed="true">Home Renovations</a>
+        <a href="/services/new-construction" class="btn btn-outline-primary" role="button" aria-pressed="true">New Construction</a>
+        <a href="/services/property-management" class="btn btn-outline-primary" role="button" aria-pressed="true">Property Management</a>
+        <a href="/services/other" class="btn btn-outline-primary" role="button" aria-pressed="true">Other</a>
       </div>
     </div>
   </div>
   <div class="row my-shuffle">
 
-    <div class="col my-sizer-element"></div>
+    <div class="col-1 my-sizer-element"></div>
 
           <?php /* Start the Loop */ ?>
           <?php while ( have_posts() ) : the_post(); ?>
